@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+:root {
+    --body-bg: #0f0f0f;
+    --button-bg: #1b1b1b;
+    --button-bg-hover: aliceblue;
+    --result-button-bg: rgb(0, 247, 123);
+    --txt-color: white;
+    --txt-color-hover: #0f0f0f;
+}
+.light-mode:root {
+    --body-bg: #b7ffdb;
+    --button-bg: #f5f5f5;
+    --button-bg-hover: #0f0f0f;
+    --result-button-bg: rgb(0, 247, 123);
+    --txt-color: #0f0f0f;
+    --txt-color-hover: white;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background-color: var(--body-bg);
+}
+label {
+    color: var(--txt-color);
+}
+.calculadora {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+#result-container {
+    padding: 5px;
+    background-color: var(--button-bg);
+    width: 395px;
+    min-height: 100px;
+    max-height: auto;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+#operation {
+    margin: auto;
+    color: var(--button-bg-hover);
+    font-size: 40px;
+    text-align: right;
+}
+
+button {
+    background-color: var(--button-bg);
+    color: var(--txt-color);
+    font-size: 15px;
+    border: none;
+    transition-duration: 0.3s;
+}
+button:hover {
+    background-color: var(--button-bg-hover);
+    color: var(--txt-color-hover);
+}
+.button {
+    width: 100px;
+    height: 100px;
+}
+.equal-button {
+    width: 100px;
+    height: 202px;
+    background-color: var(--result-button-bg);
+}
+.zero-button {
+    width: 202px;
+    height: 100px;
+}
